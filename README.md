@@ -1,3 +1,3 @@
-# testProject
+# SEC Backend
 
-a [Sails](http://sailsjs.org) application
+Established Site for Towson's Software Engineering Club
