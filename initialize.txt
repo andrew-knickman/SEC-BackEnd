@@ -1,0 +1,9 @@
+{
+	"_id" : ObjectId("5825237da3918c5c3e58c591"),
+	"username" : "test",
+	"name" : "test",
+	"email" : "test@test.com",
+	"encryptedPassword" : "$2a$10$Emed3/JXxucJg6h7hAFSau9xftXYTu5g91oTV/dthCTIhLwMftsiy",
+	"createdAt" : ISODate("2016-11-11T01:48:45.098Z"),
+	"updatedAt" : ISODate("2016-11-11T01:48:45.098Z")
+}

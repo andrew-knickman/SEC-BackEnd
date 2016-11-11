@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="jumbotron">
+        <% if(flash && flash.err) { %>
+        <ul class="alert alert-success">
+            <% Object.keys(flash.err).forEach(function(error) { %>
+            <li><%- JSON.stringify(flash.err[error]) %></li>
+            <% }) %>
+        </ul>
+        <% } %>
+        <form action="/session/create" method="POST" class="form-login">
+            <div class="control-group">
+                <input type="text" placeholder="Username" name="username" class="form-control"/>
+            </div>
+            <div class="control-group">
+                <input type="password" placeholder="Password" name="password" class="form-control"/>
+            </div>
+            <input type="submit" value="Login" class="btn btn-md btn-primary btn-block"/>
+            <input type="hidden" name="_csrf" value="<%= _csrf %>"/>
+        </form>
+    </div>
+</div>
